@@ -1,0 +1,99 @@
+.tracker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    width: 30%;
+    margin: 50px 0;
+    border-radius: 20px;
+}
+
+p{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.balance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.balance button {
+    height: 50px;
+    width: 200px;
+    margin-left: 10%;
+    border: none;
+    background-color: #DCCA87;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.income{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.income_item{
+    border: 1px solid lightgray;
+    margin: 4%;
+    height: 100px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input{
+    border: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    height: 40px;
+    width: 250px;
+    font-size: 16px;
+    padding: 0px 10px;
+    color: black;
+}
+
+.trasactions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.trasactions_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid lightgray;
+    margin: 10px;
+    padding: 0 15px;
+    border-radius: 10px;
+
+}
+
+.icons{
+    cursor: pointer;
+}
+
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

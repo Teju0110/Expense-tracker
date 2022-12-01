@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import ExpenseTracker from './Components/ExpenseTracker';
+import {BrowserRouter, Routes,Route} from 'react-router-dom'
+import AddExpense from './Components/AddExpense';
+import {ToastContainer} from 'react-toastify'
+import EditExpense from './Components/EditExpense';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ToastContainer/>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<ExpenseTracker/>}/>
+        <Route path='/add' element={<AddExpense/>}/>
+        <Route path='/edit/:id' element={<EditExpense/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
